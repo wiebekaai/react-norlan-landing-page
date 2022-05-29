@@ -1,8 +1,8 @@
 import clsx from 'clsx';
+import Image from 'next/image';
 import { useState } from 'react';
 import { InView } from 'react-intersection-observer';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import FadeInImage from '../fade-in-image';
 
 function HeroHeader() {
   const [isInView, setIsInView] = useState(false);
@@ -22,7 +22,7 @@ function HeroHeader() {
                 isInView ? 'scale-100' : 'scale-110'
               )}
             >
-              <FadeInImage priority alt={lines.join(' ')} layout="fill" objectFit="cover" src={image} />
+              <Image priority alt={lines.join(' ')} layout="fill" objectFit="cover" src={image} />
             </div>
           ),
           speed: -2,
