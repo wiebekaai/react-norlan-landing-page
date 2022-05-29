@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-display: swap;
+        font-family: 'Axia';
+        font-weight: 400;
+        src: url('/fonts/axia-regular.woff2') format('woff2');
+    }
+    
+    @font-face {
+        font-display: swap;
+        font-family: 'Proxima Nova';
+        font-weight: 400;
+        src: url('/fonts/proxima-nova-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: 'Proxima Nova';
+        font-weight: 600;
+        src: url('/fonts/proxima-nova-semibold.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-display: swap;
+        font-family: 'Helvetica Neue';
+        font-weight: 500;
+        src: url('/fonts/helvetica-neue-medium.woff2') format('woff2');
+    }
+
+    html {
+        @apply bg-black text-white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-axia uppercase;
+    }
+}

@@ -1,34 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A React clone of this [landing page](https://norlanglass.com/pages/norlan-whisky-glass) for Norlan, originally made by my friends at Ask Phill.
 
-## Getting Started
+# 🧐 Takeaways
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Small, looping videos add a nice dynamic touch to the design!
+- You can show off on the desktop version while keeping the mobile version usable. An animation based on scroll for the [crossfade features section](/components/sections/crossfade-features.jsx) translates to a simple carousel on mobile.
+- You can stagger CSS transitions using delays, see [header](/components/sections/hero-header.jsx).
+- [react-scroll-parallax](https://react-scroll-parallax.damnthat.tv/docs/intro) makes implementing parallaxes a breeze. I do recommend reading about the parallax effect and plain javascript implementations to get a good understanding.
+- `react-scroll-parallax` works fine on the [crossfade features section](/components/sections/crossfade-features.jsx). However, it does not play perfectly on larger screens. Here are some resources that could help when implementing a more stable solution:
+  - [Let’s Make One of Those Fancy Scrolling Animations Used on Apple Product Pages](https://css-tricks.com/lets-make-one-of-those-fancy-scrolling-animations-used-on-apple-product-pages/)
+  - [react-scroll-trigger](https://www.npmjs.com/package/react-scroll-trigger)
+  - [react-gsap](https://bitworking.github.io/react-gsap/src-components-scroll-trigger#basic-usage)

@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-hook/window-size": "^3.0.7",
+    "clsx": "^1.1.1",
+    "keen-slider": "^6.6.14",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-intersection-observer": "^9.1.0",
+    "react-scroll-parallax": "^3.2.0"
   },
   "devDependencies": {
+    "@types/react": "^18.0.9",
     "autoprefixer": "^10.4.7",
     "eslint": "8.15.0",
     "eslint-config-airbnb": "^19.0.4",
